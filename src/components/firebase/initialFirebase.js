@@ -20,7 +20,6 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app)
 const auth = getAuth(app)
-// const analytics = getAnalytics(app);
 
 const fetchWeddingData = async (id) => {
     const dbRef = ref(database);
